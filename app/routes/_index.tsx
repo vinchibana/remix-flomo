@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import {Button} from "@nextui-org/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,8 +10,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className='bg-amber-300'>
+    <div>
       Hello World
+      <Button color='secondary'>Next</Button>
     </div>
   );
 }
