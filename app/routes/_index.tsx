@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import {Button} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,10 +10,11 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <div className="flex gap-4 items-center">
       Hello World
-      <Button color='secondary'>Next</Button>
+      <Button color="primary" variant="shadow">
+        Shadow
+      </Button>
     </div>
   );
 }
-
